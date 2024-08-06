@@ -57,6 +57,7 @@ export const usePokemonGame = () => {
   };
 
   onMounted(async () => {
+    // console.log('onMounted');
     // Logica a ejecutar una vez el componente, el usa la funcion usePokemonGame(), se monta
 
     // await new Promise((r) => setTimeout(r, 1000)); // Retarde de 1000 milisegundos para que se alcance a apreciar el mensaje "Cargando pokemons" en PokemonGame.vue
@@ -65,6 +66,9 @@ export const usePokemonGame = () => {
     // console.log(pokemons);
 
     setNextRound();
+    // console.log(pokemonOptions.value);
+
+    // console.log('Finished mounted process');
   });
 
   return {
